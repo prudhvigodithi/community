@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "github_username": { "type": "string" },
+        "opensearch_slack_username": { "type": "string" },
+        "company": { "type": "string" },
+        "location": { "type": "string" },
+        "profile_image": {
+            "type": "string",
+            "pattern": "^\\.\\./assets/profile-images/.*\\.jpg$"
+        }
+    },
+    "required": [
+        "name",
+        "github_username",
+        "opensearch_slack_username",
+        "company",
+        "location"
+    ],
+    "additionalProperties": false
+}
+  
